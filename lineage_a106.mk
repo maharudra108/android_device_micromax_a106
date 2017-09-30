@@ -154,6 +154,10 @@ PRODUCT_PACKAGES += \
 #    ro.product.name \
 #    ro.product.manufacturer \
 #    ro.product.model
+
+# HIDL
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
 	
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi

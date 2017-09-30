@@ -155,6 +155,10 @@ PRODUCT_PACKAGES += \
 #    ro.product.manufacturer \
 #    ro.product.model
 
+# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service
+
 # HIDL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml

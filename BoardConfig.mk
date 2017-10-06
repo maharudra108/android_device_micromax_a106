@@ -125,7 +125,7 @@ TARGET_GLOBAL_CPPFLAGS += -DANDROID_MULTI_SIM
 TARGET_GLOBAL_CFLAGS   += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_USERIMAGES_USE_EXT4:=true
-USE_CAMERA_STUB := true
+TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY := libcamera_parameters_mtk
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \

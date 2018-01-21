@@ -60,7 +60,8 @@ PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/configs/thermal.conf:system/etc/.tp/thermal.conf \
      $(LOCAL_PATH)/configs/.ht120.mtc:system/etc/.tp/.ht120.mtc \
      $(LOCAL_PATH)/configs/thermal.off.conf:system/etc/.tp/thermal.off.conf \
-     $(LOCAL_PATH)/configs/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
+     $(LOCAL_PATH)/configs/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
+     $(LOCAL_PATH)/configs/sensors/_hals.conf:system/vendor/etc/sensors/_hals.conf
 	
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -161,6 +162,11 @@ PRODUCT_PACKAGES += \
 #    ro.product.manufacturer \
 #    ro.product.model
 
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service \
+    sensors.sprout
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
@@ -201,11 +207,6 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl
-
-# Radio
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.0-impl \
-    android.hardware.radio.deprecated@1.0
 
 # HIDL
 PRODUCT_COPY_FILES += \

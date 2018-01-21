@@ -137,6 +137,10 @@ PRODUCT_PACKAGES += \
     libsprout_omx_shim \
     libsprout_camera \
     libsprout_log_shim
+
+PRODUCT_PACKAGES += \
+    libion \
+    libcurl
 	
 PRODUCT_PACKAGES += \
     librs_jni \

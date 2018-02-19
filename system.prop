@@ -86,3 +86,4 @@ ril.radiooff.poweroffMD=0
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
 persist.sys.timezone=Asia/Calcutta
+persist.media.treble_omx=false

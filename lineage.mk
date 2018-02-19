@@ -32,14 +32,10 @@ TARGET_SCREEN_WIDTH := 480
 # Root options
 WITH_SU=true
 
-# 3rd party apps
-PRODUCT_PACKAGES += \
-    AdAway \
-    MiXplorer
+# GPS force mode
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.force.gps.mode=gnss
     
-# Equalizer
-WITH_DSPMANAGER=true
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 

@@ -87,17 +87,74 @@ PRODUCT_COPY_FILES += \
 	
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/twrp.fstab:recovery/root/etc/twrp.fstab
-	
+
+# Audio	
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
     libaudio-resampler \
-    tinymix
+    tinymix \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio@2.0-service
 
-# Doze
+# Bluetooth
 PRODUCT_PACKAGES += \
-    DozeServices
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service \
+    libbt-vendor
+
+# Camera HAL
+PRODUCT_PACKAGES += \
+    camera.device@1.0-impl \
+    camera.device@3.2-impl \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service
+
+# FM Radio
+PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0-impl \
+    FMRadio \
+    libfmjni
+
+# Graphic HAL
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.mapper@2.0-impl \
+    libgralloc_extra \
+    libgui_ext
+
+# Health HAL
+PRODUCT_PACKAGES += \
+    android.hardware.health@1.0-impl \
+    android.hardware.health@1.0-service
+
+# Keymaster HAL
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl
+
+# Memtrack HAL
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-impl
+
+# Power HAL
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl
+
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service \
+    lights.mt6582
+
+#USB HAL
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -107,22 +164,20 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	messaging
 
-# FM Radio
-PRODUCT_PACKAGES += \
-    FMRadio \
-    FMRadioGoogle \
-    FmRadioTrampoline2
-
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
     gps.mt6582\
     YGPS
 
 # Wifi
  PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
     libwpa_client \
     hostapd \
     dhcpcd.conf \
+    wificond \
+    wifilogd \
     wpa_supplicant \
     wpa_supplicant.conf
 
@@ -200,8 +255,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false
 
 USE_CUSTOM_AUDIO_POLICY := 1
-
-
 
 # FASTER BOOTANIMATION
 TARGET_BOOTANIMATION_HALF_RES := true

@@ -13,6 +13,10 @@ TARGET_ARCH_VARIANT_CPU := cortex-a7
 TARGET_CPU_VARIANT:= cortex-a7
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
+# Deodex
+WITH_DEXPREOPT := false
+DISABLE_DEXPREOPT := true
+
 # NINJA
 USE_NINJA := true
 
@@ -94,10 +98,11 @@ WIFI_DRIVER_STATE_OFF		 := 0
 # MediaTek Support
 BOARD_USES_MTK_HARDWARE := true
 
-# Enable Minikin text layout engine (will be the default soon)
-USE_MINIKIN := true
+# OpenGL
+USE_OPENGL_RENDERER := true 
+BOARD_EGL_WORKAROUND_BUG_10194508 := true
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
-MALLOC_SVELTE := true
 BOARD_USE_SOFT_GATEKEEPER := true
 DEVICE_RESOLUTION := 480x800
 
@@ -108,6 +113,8 @@ BOARD_USES_MTK_HARDWARE := true
 
 # FRAMEWORK WITH OUT SYNC
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
+
+BOARD_EGL_CFG := device/micromax/a106/egl.cfg
 
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true

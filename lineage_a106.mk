@@ -199,6 +199,10 @@ PRODUCT_PACKAGES += \
     power.default \
     power.mt6582
 
+# Vendor Interface Manifest
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
+
 # Dynamically set props
 #PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
 #    ro.product.name \

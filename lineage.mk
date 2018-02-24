@@ -7,6 +7,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Call device specific makefile
 $(call inherit-product, device/micromax/a106/lineage_a106.mk)
 
+# Inherit common Android Go configurations
+$(call inherit-product, build/target/product/go_defaults.mk)
+
 LOCAL_PATH := device/micromax/a106
 
 # Common CM stuff

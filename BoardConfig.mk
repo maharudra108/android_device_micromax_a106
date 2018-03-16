@@ -34,6 +34,7 @@ MTK_PLATFORM := mt6582
 MTK_PROJECT := a106
 TARGET_KERNEL_SOURCE := kernel/micromax/a106
 TARGET_KERNEL_CONFIG := a106_defconfig
+BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_CMDLINE :=
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_KERNEL_BASE := 0x10000000
@@ -43,7 +44,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 #TARGET_PREBUILT_KERNEL := device/micromax/a106/kernel
 
 # Hack for build
-$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
+# $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth

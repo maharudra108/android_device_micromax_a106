@@ -20,9 +20,6 @@ LOCAL_SRC_FILES := \
     icu53.c \
     icu55.c \
     ril.cpp \
-    ssl.c \
-    wvm.cpp \
-    ui.cpp \
     xlog.c \
     xlog_hack.cpp \
     mtk_hack.cpp

@@ -8,7 +8,7 @@
 #connectivity
 # Create char device file for WMT, GPS, BT, FM, WIFI
 /dev/stpwmt              0660  system      system
-/dev/wmtdetect           0660  system      system
+/dev/wmtdetect           0660  wifi      wifi
 
 # BT
 /dev/stpbt               0660  bluetooth   bluetooth

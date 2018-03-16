@@ -95,10 +95,6 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     tinymix
 
-# Doze
-PRODUCT_PACKAGES += \
-    DozeServices
-
 # Camera
 PRODUCT_PACKAGES += \
 	Snap
@@ -116,7 +112,6 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     gps.mt6582\
-    YGPS
 
 # Wifi
  PRODUCT_PACKAGES += \
@@ -200,8 +195,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false
 
 USE_CUSTOM_AUDIO_POLICY := 1
-
-
 
 # FASTER BOOTANIMATION
 TARGET_BOOTANIMATION_HALF_RES := true

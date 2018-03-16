@@ -13,6 +13,10 @@ TARGET_ARCH_VARIANT_CPU := cortex-a7
 TARGET_CPU_VARIANT:= cortex-a7
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
+# Deodex
+WITH_DEXPREOPT := false
+DISABLE_DEXPREOPT := true
+
 # NINJA
 USE_NINJA := true
 
@@ -77,10 +81,6 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/twrp.fstab
 BOARD_HAS_FLIPPED_SCREEN := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 
-# EGL settings
-#BOARD_EGL_CFG := $(DEVICE_FOLDER)/egl.cfg
-#USE_OPENGL_RENDERER := true
-
 # OpenGL
 USE_OPENGL_RENDERER:= true
 
@@ -99,10 +99,6 @@ WIFI_DRIVER_LOAD_DELAY := true
 # MediaTek Support
 BOARD_USES_MTK_HARDWARE := true
 
-# Enable Minikin text layout engine (will be the default soon)
-USE_MINIKIN := true
-
-MALLOC_SVELTE := true
 DEVICE_RESOLUTION := 480x800
 
 # Mediatek flags
@@ -121,7 +117,7 @@ TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 # Dual SIM
 SIM_COUNT := 2
 
-BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril/
+#BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril/
 
 TARGET_USERIMAGES_USE_EXT4:=true
 USE_CAMERA_STUB := true

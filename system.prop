@@ -41,8 +41,7 @@ ro.zygote.preload.enable=0
 ro.kernel.zio=38,108,105,16
 ro.boot.selinux=disable
 
-# Disable dirty region for Mali
-debug.hwui.render_dirty_regions=false
+debug.hwui.profile=true
 
 # MTK H/W
 ro.mediatek.chip_ver=S01

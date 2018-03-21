@@ -10,3 +10,6 @@ cd ../../
 cd hardware/interfaces
 patch -p1 < ../../device/micromax/a106/patches/hardware_interfaces.patch
 cd ../../
+cd bionic/
+patch -p1 < ../../device/micromax/a106/patches/bionic.patch
+cd ../

@@ -23,7 +23,7 @@ LOCAL_SRC_FILES := \
     xlog.c \
     xlog_hack.cpp \
     mtk_hack.cpp \
-    audio.cpp
+#    audio.cpp
 
 LOCAL_C_INCLUDES += frameworks/av/media/mtp/ system/core/include/ frameworks/rs/server/ frameworks/av/include/ hardware/libhardware/include/
 LOCAL_SHARED_LIBRARIES := libbinder libutils liblog libgui libui \

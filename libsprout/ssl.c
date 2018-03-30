@@ -1,4 +1,5 @@
 #include <openssl/ssl.h>
+#include <malloc.h>
 
 #define LOG_TAG "SSL_ctrl_stub"
 #include <log/log.h>

@@ -127,8 +127,14 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
-    libsprout \
     libxlog
+
+#Shims
+PRODUCT_PACKAGES += \
+    libsprout_ril_shim \
+    libsprout_omx_shim \
+    libsprout_camera \
+    libsprout_log_shim
 	
 PRODUCT_PACKAGES += \
     librs_jni \

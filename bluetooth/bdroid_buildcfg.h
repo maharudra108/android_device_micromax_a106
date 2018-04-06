@@ -18,5 +18,6 @@
 #define _BDROID_BUILDCFG_H
 
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
+#define BTM_DEF_LOCAL_NAME        "Micromax Unite 2 A106"
 
 #endif

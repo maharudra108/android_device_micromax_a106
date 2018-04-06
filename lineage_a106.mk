@@ -108,10 +108,10 @@ PRODUCT_PACKAGES += \
 	messaging
 
 # FM Radio
-PRODUCT_PACKAGES += \
-    FMRadio \
-    FMRadioGoogle \
-    FmRadioTrampoline2
+#PRODUCT_PACKAGES += \
+#    FMRadio \
+#    FMRadioGoogle \
+#    FmRadioTrampoline2
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -199,9 +199,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-filter=speed \
     dalvik.vm.dex2oat-swap=false
 
-USE_CUSTOM_AUDIO_POLICY := 1
-
-
+#USE_CUSTOM_AUDIO_POLICY := 1
 
 # FASTER BOOTANIMATION
 TARGET_BOOTANIMATION_HALF_RES := true

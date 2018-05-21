@@ -136,7 +136,7 @@ PRODUCT_PACKAGES += \
  PRODUCT_PACKAGES += \
     libwpa_client \
     dhcpcd.conf \
-    wpa_supplicant \
+   # wpa_supplicant 
     wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \

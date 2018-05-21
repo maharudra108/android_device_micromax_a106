@@ -66,7 +66,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/usr/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl \
 
-PRODUCT_COPY_FILES += \
+# PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml \
     $(LOCAL_PATH)/configs/etc/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/configs/etc/media_codecs.xml:system/etc/media_codecs.xml \

@@ -220,4 +220,4 @@ USE_CUSTOM_AUDIO_POLICY := 1
 TARGET_BOOTANIMATION_HALF_RES := true
 
 # Superuser
-WITH_SU := true
+# WITH_SU := true

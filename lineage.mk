@@ -30,7 +30,7 @@ TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
 # Root options
-WITH_SU=true
+# WITH_SU=true
 
 # 3rd party apps
 PRODUCT_PACKAGES += \

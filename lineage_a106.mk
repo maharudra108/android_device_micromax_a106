@@ -85,7 +85,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/etc/spn-conf.xml:system/etc/spn-conf.xml \
     $(LOCAL_PATH)/configs/etc/fmr/mt6627_fm_cust.cfg:system/etc/fmr/mt6627_fm_cust.cfg
 	
-PRODUCT_TAGS += dalvik.gc.type-precise
+#PRODUCT_TAGS += dalvik.gc.type-precise
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/init.sprout_common.rc:root/init.sprout_common.rc \
@@ -110,11 +110,11 @@ PRODUCT_PACKAGES += \
     tinymix
 
 # Doze
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     DozeServices
 
 # Camera
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
 	Snap
 
 # Messaging
@@ -122,7 +122,7 @@ PRODUCT_PACKAGES += \
 	messaging
 
 # FM Radio
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     FMRadio \
     FMRadioGoogle \
     FmRadioTrampoline2
@@ -136,7 +136,7 @@ PRODUCT_PACKAGES += \
  PRODUCT_PACKAGES += \
     libwpa_client \
     dhcpcd.conf \
-   # wpa_supplicant 
+    wpa_supplicant \
     wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
@@ -153,7 +153,7 @@ PRODUCT_PACKAGES += \
     libnl_2 \
     libtinyxml
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     setup_fs \
     e2fsck \
 
@@ -176,7 +176,7 @@ $(call inherit-product, vendor/micromax/a106/a106-vendor.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
+#$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
 	ro.crypto.state=unencrypted \
 	ro.mount.fs=EXT4 \
@@ -189,11 +189,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
         persist.service.debuggable=1 \
 	ro.zygote=zygote32 \
 	camera.disable_zsl_mode=1 \
-	dalvik.vm.dex2oat-Xms=64m \
+	#dalvik.vm.dex2oat-Xms=64m \
 	dalvik.vm.dex2oat-Xmx=512m \
 	dalvik.vm.image-dex2oat-Xms=64m \
-	dalvik.vm.image-dex2oat-Xmx=64m \
-	ro.dalvik.vm.native.bridge=0 \
+	#dalvik.vm.image-dex2oat-Xmx=64m \
+	#ro.dalvik.vm.native.bridge=0 
 	ro.hardware=sprout \
 	ro.telephony.ril_class=MediaTekRIL
 
@@ -208,7 +208,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     pm.dexopt.forced-dexopt=speed \
     pm.dexopt.core-app=speed
 
-PRODUCT_PROPERTY_OVERRIDES += \
+#PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-filter=speed \
     dalvik.vm.dex2oat-swap=false
 
